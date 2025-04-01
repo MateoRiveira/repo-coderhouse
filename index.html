@@ -1,0 +1,119 @@
+<!--Declaracion DOCTYPE para empezar con el codigo HTML-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Configuracion de nuestra pagina con head-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="/styles.css">
+    <title>Mi primer sitio web</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+</head>
+<!--Contenido de nuestra pagina con body-->
+<body>
+  
+   <div>
+    <p>Este es un parrafo dento de un div</p>
+    <span>Este es un span dentro de un div</span>
+   </div>
+   
+   <h1 class="titulos">Mi primer sitio web en codigo</h1>   
+   <p>este es un parrafo de ejemplo</p>
+
+<h2 class="titulos  ">Subtitulo</h2>
+
+   <!--Enlace-->
+   <a href=""></a>
+   <!--Imagen-->
+   <img src="" alt=" " >   
+
+   <!--Esta lista organizada es el paso a paso de la forma de cocinar nuestra cena--> 
+   <ol>
+    <li>Batir</li>
+    <li>Cocinar</li> 
+    <li>Comer</li>
+   </ol>
+
+   <!--Lista desorganizada-->
+   <ul>
+    <li>Agua</li>
+    <li>Carne</li>
+    <li>Verduras</li>
+   </ul>
+
+   <!--Enlace Absoluto-->
+   <a href="https://google.com">Prensa</a>
+
+   <!--Enlaces Relativos-->
+   <a href="Servicios.html">Ver Servicios</a>
+
+   <!--Enlace Interno | El id se crea con el simbolo # seguido del nombre de la seccion-->
+   <a href="#testimonios">Testimonios</a>
+
+
+   <section id="testimonios">
+    <p>Testimonios</p>
+   </section>
+
+   <!--Videos-->
+   <video src="Video.mp4" controls></video>
+
+   <!--Audio--> 
+   <audio src="Audio.mp3" controls></audio>
+
+   <!--Tablas| Para organizarnos o para armas emails -->
+   <table> <!--Contenedoras de las tablas-->
+        <tr> <!-- Definen filas-->
+            <th>Nombre</th><!--Encabezados-->
+            <th>Ciudad</th>
+            <th>Edad</th>
+        </tr>
+
+        <tr>
+            <td>Niko</td><!--Celdas-->
+            <td>Buenos Aires</td>
+            <td>34</td> 
+        </tr>
+    </table>
+
+  <!--Formulario-->  
+  <form action="/submit" method="post"><!-- Etiqueta Contenedora-->
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre">
+
+    <label for="password">Contraseña:</label>
+    <input type="password" name="password" id="password">
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea name="mensaje" id="mensaje"></textarea>
+
+    <label for="genero">Genero:</label>
+    
+    <input type="radio" name="genero" id="genero">
+    <label for="">Hombre</label>
+
+    <input type="radio" name="genero" id="genero">
+    <label for="">Mujer</label>
+
+    <label for="suscribe">Sucribirse</label>
+    <input type="checkbox" name="sucribe" id="suscribe">
+    
+    <label for="pais">Pais</label>
+    <select name="" id="">
+      <option value="">Brasil</option>
+      <option value="">Argentina</option>
+      <option value="">Uruguay</option>
+    </select>
+
+    <input type="submit" value="Enviar  ">
+
+  </form> 
+   
+</body>
+</html>

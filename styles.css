@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Crearemos un Selector + Propiedad + Valor
+    selector {
+    propiedad::valor
+    }
+    */
+
+
+
+ p{
+    /*nombre de color, hexademial,rgb,rgba */
+    color:#B2D6F9;
+    color: rgb(0, 0, 255);
+    color: red;
+    color: rgba(25, 0, 255, 0.247);
+    font-size: 20px;
+    /*unidades de medida | px em rm % */
+    margin: 20px;} 
+
+h1{
+    color:#333;
+    text-align: center;
+}
+
+body{
+    background-color: #f0f0f0;
+}
+
+div{
+    color: green;
+}
+span{
+    color: red;
+}
+
+
+/* Especifidad*/
+
+div span {
+    color: green
+}
+
+.titulos{
+    text-decoration: underline;
+}
+
+#testimonios {
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+
+
+.titulos-servicios{
+    color: blue;
+    text-transform: uppercase;
+    font-size: 24px;/*Absoluta*/
+    font-family: "Nunito Sans", serif;
+}
+
+.parrafos-servicios{
+    color: gray;
+    font-style: italic;
+    font-size: 1.5em; /*Relativa* | al tamaño de fuente del elemento padre |
+    Rem es relativo al tamaño de la fuente del elemento raiz*/
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.caja {
+    width: 50%;
+    height: 50vh;
+    background-color: lightblue;
+    border: 2px solid blue;
+    text-align: center;
+    line-height: 100px;
+    margin: 10px;
+
+    /* Flex Grow nos permite cambiar el ancho de las cajas de manera flexible */
+    flex-grow: 1;
+}
+
+.contenedor{
+    display: flex; /* Activa Flexbox */
+    justify-content: space-between; /* Horizontal */
+    align-items: center; /*Vertical*/
+    padding: 10px;
+    flex-direction: column-reverse;
+}
+
+.navbar{
+    background-color: #B6D9FE;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li{
+    margin: 0 15px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.container{
+    display: flex;
+}
+
+.sidebar{
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+.main-content{
+    width: 75%;
+    background-color: #eaeaea;
+    padding: 20px;
+}
+
+.grid-container{
+    display: grid; /* Deinimos Grid */
+    grid-template-columns: repeat(4, 1fr);/*Definimos Columnas | unidad de medida fraccion */
+    gap: 5px;
+    grid-template-rows: 100px 200px;/*Definir filas*/
+
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Media Querys*/
+@media (max-width: 576px) {
+    .custom-style {
+        background-color: red;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .custom-style {
+        background-color: blue;
+    }
+}
+
+@media (min-width: 769px) {
+    .custom-style{
+        background-color: green ;
+    }
+    
+}
